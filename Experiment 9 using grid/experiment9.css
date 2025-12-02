@@ -5,7 +5,10 @@ body{
 h1{
     text-align: center;
     margin-top: 20px;
+    margin-left: 580px;
+    margin-right: 580px;
     padding: 20px;
+    background-color: white;
     color: rgb(255, 1, 1);
 }
 .product-grid{
