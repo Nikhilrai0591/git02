@@ -1,0 +1,26 @@
+.body{
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+.navbar .logo h4{
+    color: #fff;
+    margin: 2PX;
+}
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+    margin: 5px;
+    padding: 2px;
+}
+.navbar .nav-links li{
+    margin-left: 50px;
+}
