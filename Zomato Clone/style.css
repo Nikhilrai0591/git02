@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f88b8b;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    width: 500px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 100%;
+}
+
+.search-bar span {
+    color: #ccc;
+    padding: 0 8px;
+}
+
+.nav-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+/* CATEGORIES */
+.categories {
+    display: flex;
+    gap: 40px;
+    padding: 30px 50px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #555;
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.category.active {
+    color: #e23744;
+    font-weight: bold;
+}
+
+/* FILTERS */
+.filters {
+    padding: 20px 50px;
+}
+
+.filters button {
+    margin-right: 10px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* RESTAURANTS */
+.restaurants {
+    padding: 30px 50px;
+}
+
+.restaurants h2 {
+    margin-bottom: 25px;
+}
+
+.restaurant-grid {
+    display: grid;
+    color: #ddd;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    border-radius: 12px;
+    color: #ddd;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 12px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    background: #267e3e;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
